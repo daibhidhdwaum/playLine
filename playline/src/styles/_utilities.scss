@@ -1,0 +1,14 @@
+$primaryColor: #012146;
+$secondaryColor: #f8f8f8;
+$tertiaryColor: #737373;
+$quaternaryColor: #4a4a4a;
+$quinaryColor: #464646;
+$senaryColor: #a1a1a1;
+$septenaryColor: #f0f0f0;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
