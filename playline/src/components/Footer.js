@@ -1,28 +1,26 @@
+const footerLinks = [
+  "About",
+  "PLB Bonus",
+  "Contact",
+  "Security",
+  "Responsible Play",
+  "Privacy",
+  "Terms",
+];
+
 const Footer = () => {
+  const button = footerLinks.map((link) => {
+    return (
+      <li className="footer__linkContainer">
+        <button className="footer__links">{link}</button>
+      </li>
+    );
+  });
+
   return (
-    <footer>
-      <ul>
-        <li>
-          <button>About</button>
-        </li>
-        <li>
-          <button>PLB Bonus</button>
-        </li>
-        <li>
-          <button>Contact</button>
-        </li>
-        <li>
-          <button>Security</button>
-        </li>
-        <li>
-          <button>Responsible Play</button>
-        </li>
-        <li>
-          <button>Privacy</button>
-        </li>
-        <li>
-          <button>Terms</button>
-        </li>
+    <footer className="footer">
+      <ul className="footer__list" key={footerLinks.index}>
+        {button}
       </ul>
     </footer>
   );

@@ -4,13 +4,21 @@ import googlePlay from "../assets/icons/google-play@3x.png";
 const Downloads = () => {
   return (
     <div className="downloads">
-      <h2>Download the App</h2>
-      <div>
-        <button>
-          <img src={appStore} alt="App Store button" />
+      <h2 className="downloads__header">Download the App</h2>
+      <div className="downloads__buttonContainer">
+        <button className="downloads__button">
+          <img
+            src={appStore}
+            alt="App Store button"
+            className="downloads__buttonImage"
+          />
         </button>
-        <button>
-          <img src={googlePlay} alt="Google Play button" />
+        <button className="downloads__button">
+          <img
+            src={googlePlay}
+            alt="Google Play button"
+            className="downloads__buttonImage"
+          />
         </button>
       </div>
     </div>

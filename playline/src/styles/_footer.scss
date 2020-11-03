@@ -1,0 +1,14 @@
+.footer {
+  &__list {
+    @include flex(row, center, center);
+  }
+  &__links {
+    font-family: "SF Pro Display Light";
+    text-transform: uppercase;
+    color: $tertiaryColor;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    margin: 2rem;
+  }
+}
