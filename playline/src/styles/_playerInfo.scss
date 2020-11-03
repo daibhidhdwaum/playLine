@@ -1,0 +1,51 @@
+.playerInfo {
+  width: 100%;
+  height: 16rem;
+  @include flex(column, center, center);
+
+  &__container {
+    text-align: center;
+    height: 12rem;
+  }
+  &__name,
+  &__pointsText {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: $tertiaryColor;
+    font-family: "SF Pro Display Light";
+  }
+  &__name {
+    margin: 0.4rem auto;
+  }
+  &__pointsContainer {
+    @include flex(column, center, center);
+  }
+  &__outerCircle {
+    @include flex(auto, center, center);
+    border: 1px solid $tertiaryColor;
+    margin: 0.5rem auto;
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    background-color: $septenaryColor;
+  }
+  &__innerCircle {
+    @include flex(column, center, center);
+    border: 1px solid lightgray;
+    height: calc(6rem - 1rem);
+    width: calc(6rem - 1rem);
+    border-radius: 50%;
+    background-color: white;
+  }
+  &__pointsData {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.1rem;
+    text-align: center;
+    font-family: "Morgan Poster Avec";
+    color: $primaryColor;
+  }
+  &__pointsText {
+    margin: 0.2rem;
+  }
+}

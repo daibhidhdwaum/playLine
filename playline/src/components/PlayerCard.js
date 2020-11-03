@@ -4,8 +4,12 @@ import PlayerInfo from "./PlayerInfo";
 const PlayersCard = () => {
   return (
     <div className="card">
-      <PlayerImage />
-      <PlayerInfo />
+      <div className="card__imagesContainer">
+        <PlayerImage />
+      </div>
+      <div className="card__infoContainer">
+        <PlayerInfo />
+      </div>
     </div>
   );
 };

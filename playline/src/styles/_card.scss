@@ -1,18 +1,6 @@
 .card {
-  &__outerContainer {
-    height: 100%;
-    width: 100%;
-    border: 1px solid red;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 50%;
-  }
-  &__imageContainer {
-    border: 1px solid green;
-    background-color: $septenaryColor;
-    border-radius: 50%;
-  }
-  &__image {
-    border-radius: 50%;
-  }
+  // @include flex(auto, center, center);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 21fr);
 }

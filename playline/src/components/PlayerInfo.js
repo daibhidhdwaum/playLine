@@ -26,15 +26,17 @@ const PlayerInfo = () => {
       const { last_name, points } = player;
 
       return (
-        <div key={last_name}>
-          <p>{last_name}</p>
-          <div>
-            <div>
-              <div>
-                <p>{points}</p>
+        <div key={last_name} className="playerInfo">
+          <div className="playerInfo__container">
+            <p className="playerInfo__name">{last_name}</p>
+            <div className="playerInfo__pointsContainer">
+              <div className="playerInfo__outerCircle">
+                <div className="playerInfo__innerCircle">
+                  <p className="playerInfo__pointsData">{points}</p>
+                </div>
               </div>
+              <p className="playerInfo__pointsText">pts</p>
             </div>
-            <p>pts</p>
           </div>
         </div>
       );

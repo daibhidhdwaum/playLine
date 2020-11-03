@@ -7,9 +7,13 @@ import "./App.scss";
 const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Contest />
-      <Footer />
+      <div className="wrapper">
+        <div className="container">
+          <Header />
+          <Contest />
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };

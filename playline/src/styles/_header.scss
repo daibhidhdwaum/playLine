@@ -1,6 +1,7 @@
 .header {
   @include flex(auto, center, center);
   height: 35vh;
+  min-height: 19rem;
   &__title--visuallyHidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);

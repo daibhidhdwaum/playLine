@@ -12,9 +12,11 @@ const PlayerImage = () => {
   const playerHeadshot = playerImages.map((player) => {
     const { id, src } = player;
     return (
-      <div className="card__outerContainer" key={id}>
-        <div className="card__imageContainer">
-          <img src={src} alt="player" className="card__image" />
+      <div className="playerImage" key={id}>
+        <div className="playerImage__outerContainer">
+          <div className="playerImage__innerContainer">
+            <img src={src} alt="player" className="playerImage__image" />
+          </div>
         </div>
       </div>
     );
