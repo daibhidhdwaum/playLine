@@ -7,9 +7,9 @@ import progress from "../assets/icons/progress@3x.png";
 
 const Contest = () => {
   return (
-    <section>
-      <div className="imageContainer">
-        <img src={progress} alt="progress bar" />
+    <section className="contest">
+      <div className="contest__imageContainer">
+        <img src={progress} alt="progress bar" className="contest__image" />
       </div>
       <ContestInfo />
       <PlayerCard />

@@ -1,0 +1,23 @@
+.contestInfo {
+  @include flex(column, center, center);
+  text-align: center;
+  &__headline,
+  &__details {
+    font-family: "Morgan Poster Avec";
+    text-transform: uppercase;
+  }
+  &__details,
+  &__tip {
+    color: $tertiaryColor;
+  }
+  &__headline {
+    font-size: 3rem;
+  }
+  &__details,
+  &__tip {
+    font-size: 2rem;
+  }
+  &__tip {
+    font-family: "SF Pro Display Light";
+  }
+}

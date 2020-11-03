@@ -1,0 +1,9 @@
+.contest {
+  background-color: $secondaryColor;
+  border-radius: 1.5rem;
+  @include flex(column, center, center);
+  &__imageContainer {
+    width: 70%;
+    margin: 2rem;
+  }
+}
