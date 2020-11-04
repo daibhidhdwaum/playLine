@@ -1,14 +1,27 @@
 .footer {
+  margin: 2rem auto 6rem;
+  &__wrapper {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+  }
   &__list {
     @include flex(row, center, center);
+    flex-wrap: wrap;
   }
   &__links {
     font-family: "SF Pro Display Light";
     text-transform: uppercase;
     color: $tertiaryColor;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: transparent;
     border: none;
-    margin: 2rem;
+    margin: 0.5rem;
+  }
+  &__menuPipe {
+    padding-right: 0.5rem;
+  }
+  &__linkContainer:first-child > &__links:first-child &__menuPipe {
+    display: none;
   }
 }

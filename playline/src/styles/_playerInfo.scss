@@ -1,21 +1,21 @@
 .playerInfo {
-  width: 100%;
-  height: 16rem;
-  @include flex(column, center, center);
-
   &__container {
     text-align: center;
     height: 12rem;
+    @include flex(row-reverse, flex-end, center);
+    margin-bottom: -1.25rem;
+    max-width: 18.5rem;
+    padding-left: 0.5rem;
   }
   &__name,
   &__pointsText {
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: $tertiaryColor;
-    font-family: "SF Pro Display Light";
+    font-family: "SF Pro Display Light", sans-serif;
   }
   &__name {
-    margin: 0.4rem auto;
+    margin: 0.4rem auto 0;
   }
   &__pointsContainer {
     @include flex(column, center, center);
@@ -25,15 +25,15 @@
     border: 1px solid $tertiaryColor;
     margin: 0.5rem auto;
     border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     background-color: $septenaryColor;
   }
   &__innerCircle {
     @include flex(column, center, center);
     border: 1px solid lightgray;
-    height: calc(6rem - 1rem);
-    width: calc(6rem - 1rem);
+    height: calc(4rem - 1rem);
+    width: calc(4rem - 1rem);
     border-radius: 50%;
     background-color: white;
   }
@@ -42,10 +42,28 @@
     margin-bottom: 0.2rem;
     margin-right: 0.1rem;
     text-align: center;
-    font-family: "Morgan Poster Avec";
+    font-family: "Morgan Poster Avec", serif;
     color: $primaryColor;
   }
   &__pointsText {
     margin: 0.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .playerInfo {
+    &__container {
+      @include flex(column, center, center);
+      width: 8rem;
+      margin: 0 0.2rem;
+    }
+    &__outerCircle {
+      height: 5rem;
+      width: 5rem;
+    }
+    &__innerCircle {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 }

@@ -1,17 +1,21 @@
 .contestButtons {
   width: 100%;
+  @include flex(column, center, center);
+  padding: 1rem;
   &__button {
+    height: 6rem;
+    width: 25rem;
     background-color: transparent;
     border: 1px solid grey;
     border-radius: 5rem;
     padding: 2rem;
-    width: 100%;
+    margin: 1rem;
     @include flex(auto, space-evenly, center);
   }
   &__text {
     font-family: "SF Pro Display Regular";
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2rem;
     color: $tertiaryColor;
   }
   &__buttonImage {

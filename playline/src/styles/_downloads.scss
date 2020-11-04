@@ -1,5 +1,6 @@
 .downloads {
   @include flex(column, center, center);
+  padding-bottom: 4rem;
   &__header {
     font-family: "SF Pro Display Regular";
     text-transform: uppercase;
@@ -8,14 +9,13 @@
     margin: 2rem;
   }
   &__buttonContainer {
-    @include flex(row, space-around, center);
-    width: 100%;
+    @include flex(row, auto, center);
   }
   &__button {
     background-color: transparent;
     border: none;
+    margin: 0.5rem;
     width: 100%;
-    margin: 0 2rem;
   }
   &__button:hover {
     cursor: pointer;

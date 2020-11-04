@@ -1,10 +1,7 @@
 .playerImage {
-  position: relative;
-  // border: 1px solid purple;
-  width: 100%;
-  max-width: 16rem;
-  min-height: 16rem;
+  width: 13.5rem;
   @include flex(auto, center, center);
+  margin-bottom: -3rem;
   &__outerContainer {
     padding: 1rem;
     background-color: white;
@@ -19,6 +16,12 @@
   }
 }
 
-.playerImage:first-child {
-  bottom: 0;
+@media (min-width: 768px) {
+  .playerImage {
+    margin-bottom: 2rem;
+    margin-left: -3rem;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }

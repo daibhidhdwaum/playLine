@@ -1,6 +1,28 @@
 .card {
-  // @include flex(auto, center, center);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 21fr);
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4rem;
+  height: 766px;
+}
+
+.card__wrapper {
+  max-width: 37rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: block;
+    height: auto;
+    margin: 4rem 0 2rem;
+    &__imagesContainer,
+    &__infoContainer {
+      @include flex(auto, center, center);
+    }
+  }
+
+  .card__wrapper {
+    max-width: 60rem;
+  }
 }

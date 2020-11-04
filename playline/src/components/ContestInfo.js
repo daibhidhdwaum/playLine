@@ -8,7 +8,7 @@ const ContestInfo = () => {
       <hr className="contestInfo__spacer" />
       <p className="contestInfo__tip">
         Pro Tip: You can manage your PlayLine's until they go live in the
-        Upcoming area.
+        upcoming area.
       </p>
     </div>
   );

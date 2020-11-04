@@ -12,16 +12,21 @@ const Footer = () => {
   const button = footerLinks.map((link) => {
     return (
       <li className="footer__linkContainer">
-        <button className="footer__links">{link}</button>
+        <button className="footer__links">
+          <span className="footer__menuPipe">|</span>
+          {link}
+        </button>
       </li>
     );
   });
 
   return (
     <footer className="footer">
-      <ul className="footer__list" key={footerLinks.index}>
-        {button}
-      </ul>
+      <div className="footer__wrapper">
+        <ul className="footer__list" key={footerLinks.index}>
+          {button}
+        </ul>
+      </div>
     </footer>
   );
 };

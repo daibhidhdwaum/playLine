@@ -1,15 +1,10 @@
 .contest {
   background-color: $secondaryColor;
   border-radius: 1.5rem;
-  // min-width: 340px;
-  // @include flex(column, center, center);
+  margin: 1rem;
   &__wrapper {
     max-width: 900px;
     width: 90%;
     margin: 0 auto;
-  }
-  &__imageContainer {
-    width: 70%;
-    margin: 2rem;
   }
 }
