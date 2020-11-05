@@ -4,8 +4,9 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./assets/fonts/MorganPosterAvecBold.ttf";
-import "./assets/fonts/SFProDisplay-Regular.ttf";
 import "./assets/fonts/SFProDisplay-Light.ttf";
+import "./assets/fonts/SFProDisplay-Regular.ttf";
+import "./assets/fonts/SFProDisplay-Bold.ttf";
 
 ReactDOM.render(
   <React.StrictMode>

@@ -5,15 +5,21 @@
 }
 
 @font-face {
+  font-family: "SF Pro Display Light";
+  src: local("SF Pro Display Light"),
+    url("./assets/fonts/SFProDisplay-Light.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "SF Pro Display Regular";
   src: local("SF Pro Display Regular"),
     url("./assets/fonts/SFProDisplay-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "SF Pro Display Light";
-  src: local("SF Pro Display Light"),
-    url("./assets/fonts/SFProDisplay-Light.ttf") format("truetype");
+  font-family: "SF Pro Display Bold";
+  src: local("SF Pro Display Bold"),
+    url("./assets/fonts/SFProDisplay-Bold.ttf") format("truetype");
 }
 
 body {
