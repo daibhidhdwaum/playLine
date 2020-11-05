@@ -1,3 +1,4 @@
+// player images are in Public Assets for ease of import
 const playerImages = [
   { id: 1, src: "assets/headshots/Lebron-James-PLP59D7092A6F6CEv2.png" },
   { id: 2, src: "assets/headshots/Anthony-Davis-PLP59D70938C0B3Ev2.png" },
@@ -12,6 +13,7 @@ const PlayerImage = () => {
   const playerHeadshot = playerImages.map((player) => {
     const { id, src } = player;
     return (
+      // The stacking order of the player images is different from the provided image. This way it stacks in the same order as the word "lotto" in the playline sports lotto logo.
       <div className="playerImage" key={id}>
         <div className="playerImage__outerContainer">
           <div className="playerImage__innerContainer">

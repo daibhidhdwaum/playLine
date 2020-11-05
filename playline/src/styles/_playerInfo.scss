@@ -17,12 +17,12 @@
   &__name {
     margin: 0.4rem auto 0;
   }
-  &__pointsContainer {
+  &__pointsContainer,
+  &__innerCircle {
     @include flex(column, center, center);
   }
   &__outerCircle {
     @include flex(auto, center, center);
-    border: 1px solid $tertiaryColor;
     margin: 0.5rem auto;
     border-radius: 50%;
     height: 4rem;
@@ -30,7 +30,6 @@
     background-color: $septenaryColor;
   }
   &__innerCircle {
-    @include flex(column, center, center);
     border: 1px solid lightgray;
     height: calc(4rem - 1rem);
     width: calc(4rem - 1rem);
@@ -39,8 +38,7 @@
   }
   &__pointsData {
     font-size: 2rem;
-    margin-bottom: 0.2rem;
-    margin-right: 0.1rem;
+    margin-bottom: 0.1rem;
     text-align: center;
     font-family: "Morgan Poster Avec", serif;
     color: $primaryColor;
@@ -55,7 +53,7 @@
     &__container {
       @include flex(column, center, center);
       width: 8rem;
-      margin: 0 0.2rem;
+      margin: 0 0.3rem 0 0;
     }
     &__outerCircle {
       height: 5rem;

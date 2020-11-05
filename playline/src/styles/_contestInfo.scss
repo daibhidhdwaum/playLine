@@ -4,7 +4,7 @@
   margin-bottom: 2rem;
   &__headline,
   &__details {
-    font-family: "Morgan Poster Avec";
+    font-family: "Morgan Poster Avec", serif;
     text-transform: uppercase;
   }
   &__details,
@@ -18,7 +18,7 @@
     font-size: 2rem;
   }
   &__tip {
-    font-family: "SF Pro Display Light";
+    font-family: "SF Pro Display Light", sans-serif;
     font-size: 1.8rem;
   }
 }

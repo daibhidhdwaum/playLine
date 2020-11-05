@@ -4,7 +4,7 @@ import moneyBag from "../assets/icons/money-bag@3x.png";
 const ContestButtons = () => {
   return (
     <div className="contestButtons">
-      <button className="contestButtons__button">
+      <button className="contestButtons__button" aria-label="Notify Me">
         <img
           src={notify}
           alt="Notify me button"
@@ -12,10 +12,10 @@ const ContestButtons = () => {
         />
         <p className="contestButtons__text">Notify Me</p>
       </button>
-      <button className="contestButtons__button">
+      <button className="contestButtons__button" aria-label="Deposit">
         <img
           src={moneyBag}
-          alt="Money bag button"
+          alt="Deposit button"
           className="contestButtons__buttonImage"
         />
         <p className="contestButtons__text">Deposit</p>

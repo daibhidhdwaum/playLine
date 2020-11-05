@@ -6,14 +6,14 @@ const Downloads = () => {
     <div className="downloads">
       <h2 className="downloads__header">Download the App</h2>
       <div className="downloads__buttonContainer">
-        <button className="downloads__button">
+        <button className="downloads__button" aria-label="App Store">
           <img
             src={appStore}
             alt="App Store button"
             className="downloads__buttonImage"
           />
         </button>
-        <button className="downloads__button">
+        <button className="downloads__button" aria-label="Google Play">
           <img
             src={googlePlay}
             alt="Google Play button"

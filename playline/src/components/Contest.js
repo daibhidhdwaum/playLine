@@ -1,5 +1,4 @@
 import ProgressBar from "./ProgressBar";
-
 import PlayerCard from "./PlayerCard";
 import Downloads from "./Downloads";
 import ContestInfo from "./ContestInfo";

@@ -3,23 +3,35 @@
   @include flex(column, center, center);
   padding: 1rem;
   &__button {
-    height: 6rem;
-    width: 25rem;
-    background-color: transparent;
     border: 1px solid grey;
     border-radius: 5rem;
+    background-color: transparent;
     padding: 2rem;
+    height: 6rem;
+    width: 25rem;
     margin: 1rem;
     @include flex(auto, space-evenly, center);
+    transition: 0.5s;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
   &__text {
-    font-family: "SF Pro Display Regular";
-    text-transform: uppercase;
+    font-family: "SF Pro Display Regular", sans-serif;
     font-size: 2rem;
+    text-transform: uppercase;
     color: $tertiaryColor;
   }
   &__buttonImage {
     max-height: 6rem;
     max-width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contestButtons {
+    @include flex(row, center, center);
   }
 }

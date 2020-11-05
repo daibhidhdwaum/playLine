@@ -6,6 +6,7 @@ const PlayerInfo = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      // used proxy to circumvent CORS error
       const response = await axios({
         url: "https://proxy.hackeryou.com",
         method: "GET",
